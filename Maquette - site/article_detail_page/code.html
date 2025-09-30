@@ -1,92 +1,123 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Technical Article</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Technical Article</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Noto+Sans:wght@400;700&amp;display=swap"
+          rel="stylesheet"/>
 </head>
 <body class="bg-[#111a22]">
-<div class="relative flex h-auto min-h-screen w-full flex-col bg-[#111a22] group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
-  <div class="layout-container flex h-full grow flex-col">
-    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#111a22] px-10 py-3 bg-[#111a22]">
-      <div class="flex items-center gap-8">
-        <div class="flex items-center gap-4 text-white">
-          <div class="size-4">
-            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-              <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
-            </svg>
-          </div>
-          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">PullMeIn</h2>
-        </div>
-        <div class="flex items-center gap-9">
-          <a class="text-white text-sm font-medium leading-normal" href="index.html">Home</a>
-          <a class="text-white text-sm font-medium leading-normal" href="#">Articles</a>
-          <a class="text-white text-sm font-medium leading-normal" href="#">Topics</a>
-          <a class="text-white text-sm font-medium leading-normal" href="pageContribution.html">Contribute</a>
-        </div>
-      </div>
-      <div class="flex flex-1 justify-end gap-8">
-        <label class="flex flex-col min-w-40 !h-10 max-w-64">
-          <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
-            <div class="text-gray-500 flex border border-gray-300 bg-white items-center justify-center pl-4 rounded-l-lg border-r-0" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
-              <span class="material-symbols-outlined">search</span>
-            </div>
-            <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-gray-300 bg-white focus:border-gray-300 h-full placeholder:text-gray-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search" value=""/>
-          </div>
-        </label>
-        <div class="flex gap-2">
-          <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-100 text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
-            <div class="text-[#111a22]" data-icon="Bell" data-size="20px" data-weight="regular">
-              <span class="material-symbols-outlined">notifications</span>
-            </div>
-          </button>
-          <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-100 text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
-            <div class="text-[#111a22]" data-icon="GearSix" data-size="20px" data-weight="regular">
-              <span class="material-symbols-outlined">settings</span>
-            </div>
-          </button>
-        </div>
-        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1CYGZYU-EQx-WZyoHrufQOHTwxLeepRjAMuUkb-DuX_lWkOcUdRZwGtIWSI0B-dzqoJJamWNqDGQXVy5bN5dVoDsW5LvTl1Hfm2SCMGAtM6dyZdEQQNbMJbohsKxN31Yoy-D_k5F09c2Zb2Aav7YkYA2RqQNMEFRKfgCJjKxZXQy6MKsoQobhULxlWAniQMaLYSXdoPWWjPUP3I_r2OlUqVfuLLydk88lwGkCYsk_rYAV5CipsVruvjDRKYFIZy60nWF31Xkh79l0");'></div>
-      </div>
-    </header>
-    <div class="flex flex-1 justify-center py-5 px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row max-w-[1280px] w-full gap-8">
-        <main class="w-full md:w-2/3">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <h1 class="text-white tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">Understanding Microservices Architecture: A Deep Dive</h1>
-            <div class="flex p-4 @container">
-              <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
-                <div class="flex gap-4">
-                  <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12" data-alt="Author profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdk4_phqmR1KS2TZCjFbTFGcMC4DU2n9YHZ8KZBjUDrYu_zpk3R1qSNRQpdXhVC68HaILpEWMwfGiBslTCUEtoM86dA66jvpBPtPDC-oPY3mCbbwMGmiXgizMP25PvOW4lDdY0XLO8lOBBsrHsY2pslHel9M3G8TbSZRpMc-cRUo3sd2irKgjHQxtu3X1nqYoHSOG-SIrH9dWgGAj89sAW3lIOCoTNR7lDOKl0M4D1uxekRSfF0fGHRZCuVRJwZQqwfK7CXhDPtihH");'></div>
-                  <div class="flex flex-col justify-center">
-                    <p class="text-[#007BFF] text-base font-medium leading-normal cursor-pointer hover:underline">Jane Doe</p>
-                    <p class="text-[#666666] text-sm font-normal leading-normal">October 26, 2023 · 8 min read</p>
-                  </div>
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-[#111a22] group/design-root overflow-x-hidden"
+     style='font-family: Inter, "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#111a22] px-10 py-3 bg-[#111a22]">
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-4 text-white">
+                    <div class="size-4">
+                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                                  fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">PullMeIn</h2>
                 </div>
-              </div>
+                <div class="flex items-center gap-9">
+                    <a class="text-white text-sm font-medium leading-normal" href="../login_page/code.html">Home</a>
+                    <a class="text-white text-sm font-medium leading-normal" href="../articles_home_page/code.html">Articles</a>
+                    <a class="text-white text-sm font-medium leading-normal" href="../topics/code.html">Topics</a>
+                    <a class="text-white text-sm font-medium leading-normal" href="../how_to_contribute/code.html">Contribute</a>
+                </div>
             </div>
-            <p class="text-white text-base font-normal leading-relaxed pb-3 pt-1 px-4">
-              Microservices architecture has emerged as a popular approach for building complex applications. Unlike monolithic applications, where all components are tightly coupled, microservices break down an application into smaller, independent services that communicate with each other through APIs. This approach offers several benefits, including improved scalability, resilience, and development agility.
-            </p>
-            <p class="text-white text-base font-normal leading-relaxed pb-3 pt-1 px-4">
-              In this article, we'll explore the fundamental concepts of microservices, their advantages and disadvantages, and how to get started with building your own microservices-based application. We will also look at some real-world examples of companies that have successfully adopted this architecture.
-            </p>
-            <h3 class="text-white tracking-light text-2xl font-bold leading-tight px-4 text-left pb-2 pt-5">Key Principles of Microservices</h3>
-            <ul class="list-disc list-inside text-white text-base font-normal leading-relaxed pb-3 pt-1 px-4 space-y-2">
-              <li><strong>Single Responsibility Principle:</strong> Each microservice should have a single, well-defined purpose.</li>
-              <li><strong>Decentralized Governance:</strong> Teams can choose the best technologies and languages for their specific microservice.</li>
-              <li><strong>Independently Deployable:</strong> Changes to one service don't require redeploying the entire application.</li>
-              <li><strong>Smart Endpoints and Dumb Pipes:</strong> Microservices should be autonomous, and communication channels should be simple.</li>
-            </ul>
-            <h3 class="text-white tracking-light text-2xl font-bold leading-tight px-4 text-left pb-2 pt-5">Code Example</h3>
-            <div class="px-4 py-2">
-              <div class="bg-[#272822] rounded-lg overflow-hidden">
-<pre class="p-4 text-white text-sm overflow-x-auto"><code class="language-python" style="font-family: 'Courier New', Courier, monospace;">
+            <div class="flex flex-1 justify-end gap-8">
+                <label class="flex flex-col min-w-40 !h-10 max-w-64">
+                    <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                        <div class="text-gray-500 flex border border-gray-300 bg-white items-center justify-center pl-4 rounded-l-lg border-r-0"
+                             data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+                            <span class="material-symbols-outlined">search</span>
+                        </div>
+                        <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-gray-300 bg-white focus:border-gray-300 h-full placeholder:text-gray-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                               placeholder="Search" value=""/>
+                    </div>
+                </label>
+                <div class="flex gap-2">
+                    <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-100 text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                        <div class="text-[#111a22]" data-icon="Bell" data-size="20px" data-weight="regular">
+                            <span class="material-symbols-outlined">notifications</span>
+                        </div>
+                    </button>
+                    <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-100 text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                        <div class="text-[#111a22]" data-icon="GearSix" data-size="20px" data-weight="regular">
+                            <span class="material-symbols-outlined">settings</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                     data-alt="User profile picture"
+                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1CYGZYU-EQx-WZyoHrufQOHTwxLeepRjAMuUkb-DuX_lWkOcUdRZwGtIWSI0B-dzqoJJamWNqDGQXVy5bN5dVoDsW5LvTl1Hfm2SCMGAtM6dyZdEQQNbMJbohsKxN31Yoy-D_k5F09c2Zb2Aav7YkYA2RqQNMEFRKfgCJjKxZXQy6MKsoQobhULxlWAniQMaLYSXdoPWWjPUP3I_r2OlUqVfuLLydk88lwGkCYsk_rYAV5CipsVruvjDRKYFIZy60nWF31Xkh79l0");'></div>
+            </div>
+        </header>
+        <div class="flex flex-1 justify-center py-5 px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row max-w-[1280px] w-full gap-8">
+                <main class="w-full md:w-2/3">
+                    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                        <h1 class="text-white tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">
+                            Understanding Microservices Architecture: A Deep Dive</h1>
+                        <div class="flex p-4 @container">
+                            <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
+                                <div class="flex gap-4">
+                                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12"
+                                         data-alt="Author profile picture"
+                                         style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdk4_phqmR1KS2TZCjFbTFGcMC4DU2n9YHZ8KZBjUDrYu_zpk3R1qSNRQpdXhVC68HaILpEWMwfGiBslTCUEtoM86dA66jvpBPtPDC-oPY3mCbbwMGmiXgizMP25PvOW4lDdY0XLO8lOBBsrHsY2pslHel9M3G8TbSZRpMc-cRUo3sd2irKgjHQxtu3X1nqYoHSOG-SIrH9dWgGAj89sAW3lIOCoTNR7lDOKl0M4D1uxekRSfF0fGHRZCuVRJwZQqwfK7CXhDPtihH");'></div>
+                                    <div class="flex flex-col justify-center">
+                                        <p class="text-[#007BFF] text-base font-medium leading-normal cursor-pointer hover:underline">
+                                            Jane Doe</p>
+                                        <p class="text-[#666666] text-sm font-normal leading-normal">October 26, 2023 ·
+                                            8 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-white text-base font-normal leading-relaxed pb-3 pt-1 px-4">
+                            Microservices architecture has emerged as a popular approach for building complex
+                            applications. Unlike monolithic applications, where all components are tightly coupled,
+                            microservices break down an application into smaller, independent services that communicate
+                            with each other through APIs. This approach offers several benefits, including improved
+                            scalability, resilience, and development agility.
+                        </p>
+                        <p class="text-white text-base font-normal leading-relaxed pb-3 pt-1 px-4">
+                            In this article, we'll explore the fundamental concepts of microservices, their advantages
+                            and disadvantages, and how to get started with building your own microservices-based
+                            application. We will also look at some real-world examples of companies that have
+                            successfully adopted this architecture.
+                        </p>
+                        <h3 class="text-white tracking-light text-2xl font-bold leading-tight px-4 text-left pb-2 pt-5">
+                            Key Principles of Microservices</h3>
+                        <ul class="list-disc list-inside text-white text-base font-normal leading-relaxed pb-3 pt-1 px-4 space-y-2">
+                            <li><strong>Single Responsibility Principle:</strong> Each microservice should have a
+                                single, well-defined purpose.
+                            </li>
+                            <li><strong>Decentralized Governance:</strong> Teams can choose the best technologies and
+                                languages for their specific microservice.
+                            </li>
+                            <li><strong>Independently Deployable:</strong> Changes to one service don't require
+                                redeploying the entire application.
+                            </li>
+                            <li><strong>Smart Endpoints and Dumb Pipes:</strong> Microservices should be autonomous, and
+                                communication channels should be simple.
+                            </li>
+                        </ul>
+                        <h3 class="text-white tracking-light text-2xl font-bold leading-tight px-4 text-left pb-2 pt-5">
+                            Code Example</h3>
+                        <div class="px-4 py-2">
+                            <div class="bg-[#272822] rounded-lg overflow-hidden">
+<pre class="p-4 text-white text-sm overflow-x-auto"><code class="language-python"
+                                                          style="font-family: 'Courier New', Courier, monospace;">
 from flask import Flask, jsonify
 
 app = Flask(__name__)
@@ -107,76 +138,89 @@ def get_user(user_id):
 if __name__ == '__main__':
     app.run(port=5001)
                                   </code></pre>
-              </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <aside class="w-full md:w-1/3 lg:w-1/4 pt-8">
+                    <div class="sticky top-8">
+                        <div class="flex flex-col gap-4">
+                            <h4 class="text-white text-lg font-bold">Actions</h4>
+                            <div class="flex items-center gap-4">
+                                <button class="flex items-center gap-2 text-white hover:text-[#007BFF]">
+                                    <span class="material-symbols-outlined">thumb_up</span>
+                                    <span>1.2k Likes</span>
+                                </button>
+                                <button class="flex items-center gap-2 text-white hover:text-[#007BFF]">
+                                    <span class="material-symbols-outlined">share</span>
+                                    <span>Share</span>
+                                </button>
+                                <button class="flex items-center gap-2 text-white hover:text-[#007BFF]">
+                                    <span class="material-symbols-outlined">comment</span>
+                                    <span>24 Comments</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-8 border-t border-gray-200 pt-8">
+                            <h4 class="text-white text-lg font-bold mb-4">More like this</h4>
+                            <div class="flex flex-col gap-6">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-24 h-16 bg-gray-200 rounded-lg bg-cover bg-center"
+                                         data-alt="Abstract gradient image"
+                                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiIDVp8XHem941g__atijLZ6w8uZ-AGv1XeZqE8iHIY9d7dVOfX7NCFDHGXlbIxppriDDgxMEBoYZi_eJnOEQsnaUlolQshiOyT_lBFZ8E-aac_SGZRPKt8ZrPPEUpDsVPoxVC4B6YebowjkXsgovvsEfkKvC_t0IoSa_FESD_MrVAV_nCKhrShkiRHJxw-aAVA5i9K-udHSrkzc1tkA_uDg2XWHkdOSHeFMCNvRkYI9C4jceCQftu2m7GujLWqHjBUPgXnhvFaeS9')"></div>
+                                    <div>
+                                        <a class="text-white font-bold text-base hover:text-[#007BFF] hover:underline leading-tight"
+                                           href="#">GraphQL vs. REST: Which API is Right for You?</a>
+                                        <p class="text-sm text-[#666666] mt-1">by John Smith</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-24 h-16 bg-gray-200 rounded-lg bg-cover bg-center"
+                                         data-alt="Abstract pattern"
+                                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjlFa4UkXgJexd5ZaVN58FzZvJXymPuwEOfE9l1z0n06zRQ03ABdyhPIYxpd2y6JU-LiYaTGU-8RaMj0x4ZXLi2yN_45A0NMaPNwG-HkqceoXirPuIN5QAMJ9i49lChnbGT_7kbcu8qcJ6a31jvm0HrkshXerO0-iPbQCVRSLGDryOftgDDfxRzjouHKyXOpTMfzgLi9G7s-VqKQDW8xgwqNHh_cXwA7THn3EvzAOIQL47bTGfar8Mq2nh4Bo7HNlWKPcspqrMNbRi')"></div>
+                                    <div>
+                                        <a class="text-white font-bold text-base hover:text-[#007BFF] hover:underline leading-tight"
+                                           href="#">Docker Best Practices for Production Environments</a>
+                                        <p class="text-sm text-[#666666] mt-1">by Emily White</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-24 h-16 bg-gray-200 rounded-lg bg-cover bg-center"
+                                         data-alt="Geometric shapes"
+                                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWwK5mDYS_A7MUrD4k6z7pJU544lXMEmXKv-LH2ZT1XPF6mPAv_U5ErVXodAuyf6dqpNJa0cZpJvL7CJ_YvOS2-V__L7RKKY-QlGh0d09zOrmTlqC6Feq9pRg1xYnJsCKww8QVCZzbZZPI5A7ExhLuZlKLPu2AMhKLmOgCOutz4IiymhOhtLCnuO3zBt_m-hVmeQxGZQ_dSDH53TcPHkUqMEZZSPulx7M8TNNN59Auz3MR48QrkQ6c9FmbwZrws679i3T4mmlYiT4n')"></div>
+                                    <div>
+                                        <a class="text-white font-bold text-base hover:text-[#007BFF] hover:underline leading-tight"
+                                           href="#">Kubernetes Explained in Simple Terms</a>
+                                        <p class="text-sm text-[#666666] mt-1">by Alex Johnson</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-24 h-16 bg-gray-200 rounded-lg bg-cover bg-center"
+                                         data-alt="Wavy lines pattern"
+                                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA33VFWMtzVHSYA1zRRi-3dXGIiGZ504M5-qfLVOFe7A1zn9iTWW81nkH8pZYiFJpbKpqVgJDPg9zeId9nVUGWoyFjyRoV37JXRfS9BPh4Hvps-qbB6EmCifulkoH04_w-l7yzcN59p12gYcfFl14t7oyPyaPFgS15t8Pxrbj-UN8kjasTPNTpkCd_TzaVHfwszPJtSj71JMtA6hR9KBUCxJuIbTditS0-wCNXHSrdS-ot4qMPWtSaLNNBwNBTVDRoJg03Guw8v71zx')"></div>
+                                    <div>
+                                        <a class="text-white font-bold text-base hover:text-[#007BFF] hover:underline leading-tight"
+                                           href="#">Building a CI/CD Pipeline with Jenkins and GitHub</a>
+                                        <p class="text-sm text-[#666666] mt-1">by Sarah Brown</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </div>
-          </div>
-        </main>
-        <aside class="w-full md:w-1/3 lg:w-1/4 pt-8">
-          <div class="sticky top-8">
-            <div class="flex flex-col gap-4">
-              <h4 class="text-white text-lg font-bold">Actions</h4>
-              <div class="flex items-center gap-4">
-                <button class="flex items-center gap-2 text-white hover:text-[#007BFF]">
-                  <span class="material-symbols-outlined">thumb_up</span>
-                  <span>1.2k Likes</span>
-                </button>
-                <button class="flex items-center gap-2 text-white hover:text-[#007BFF]">
-                  <span class="material-symbols-outlined">share</span>
-                  <span>Share</span>
-                </button>
-                <button class="flex items-center gap-2 text-white hover:text-[#007BFF]">
-                  <span class="material-symbols-outlined">comment</span>
-                  <span>24 Comments</span>
-                </button>
-              </div>
-            </div>
-            <div class="mt-8 border-t border-gray-200 pt-8">
-              <h4 class="text-white text-lg font-bold mb-4">More like this</h4>
-              <div class="flex flex-col gap-6">
-                <div class="flex items-start gap-4">
-                  <div class="w-24 h-16 bg-gray-200 rounded-lg bg-cover bg-center" data-alt="Abstract gradient image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiIDVp8XHem941g__atijLZ6w8uZ-AGv1XeZqE8iHIY9d7dVOfX7NCFDHGXlbIxppriDDgxMEBoYZi_eJnOEQsnaUlolQshiOyT_lBFZ8E-aac_SGZRPKt8ZrPPEUpDsVPoxVC4B6YebowjkXsgovvsEfkKvC_t0IoSa_FESD_MrVAV_nCKhrShkiRHJxw-aAVA5i9K-udHSrkzc1tkA_uDg2XWHkdOSHeFMCNvRkYI9C4jceCQftu2m7GujLWqHjBUPgXnhvFaeS9')"></div>
-                  <div>
-                    <a class="text-white font-bold text-base hover:text-[#007BFF] hover:underline leading-tight" href="#">GraphQL vs. REST: Which API is Right for You?</a>
-                    <p class="text-sm text-[#666666] mt-1">by John Smith</p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-4">
-                  <div class="w-24 h-16 bg-gray-200 rounded-lg bg-cover bg-center" data-alt="Abstract pattern" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjlFa4UkXgJexd5ZaVN58FzZvJXymPuwEOfE9l1z0n06zRQ03ABdyhPIYxpd2y6JU-LiYaTGU-8RaMj0x4ZXLi2yN_45A0NMaPNwG-HkqceoXirPuIN5QAMJ9i49lChnbGT_7kbcu8qcJ6a31jvm0HrkshXerO0-iPbQCVRSLGDryOftgDDfxRzjouHKyXOpTMfzgLi9G7s-VqKQDW8xgwqNHh_cXwA7THn3EvzAOIQL47bTGfar8Mq2nh4Bo7HNlWKPcspqrMNbRi')"></div>
-                  <div>
-                    <a class="text-white font-bold text-base hover:text-[#007BFF] hover:underline leading-tight" href="#">Docker Best Practices for Production Environments</a>
-                    <p class="text-sm text-[#666666] mt-1">by Emily White</p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-4">
-                  <div class="w-24 h-16 bg-gray-200 rounded-lg bg-cover bg-center" data-alt="Geometric shapes" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWwK5mDYS_A7MUrD4k6z7pJU544lXMEmXKv-LH2ZT1XPF6mPAv_U5ErVXodAuyf6dqpNJa0cZpJvL7CJ_YvOS2-V__L7RKKY-QlGh0d09zOrmTlqC6Feq9pRg1xYnJsCKww8QVCZzbZZPI5A7ExhLuZlKLPu2AMhKLmOgCOutz4IiymhOhtLCnuO3zBt_m-hVmeQxGZQ_dSDH53TcPHkUqMEZZSPulx7M8TNNN59Auz3MR48QrkQ6c9FmbwZrws679i3T4mmlYiT4n')"></div>
-                  <div>
-                    <a class="text-white font-bold text-base hover:text-[#007BFF] hover:underline leading-tight" href="#">Kubernetes Explained in Simple Terms</a>
-                    <p class="text-sm text-[#666666] mt-1">by Alex Johnson</p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-4">
-                  <div class="w-24 h-16 bg-gray-200 rounded-lg bg-cover bg-center" data-alt="Wavy lines pattern" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA33VFWMtzVHSYA1zRRi-3dXGIiGZ504M5-qfLVOFe7A1zn9iTWW81nkH8pZYiFJpbKpqVgJDPg9zeId9nVUGWoyFjyRoV37JXRfS9BPh4Hvps-qbB6EmCifulkoH04_w-l7yzcN59p12gYcfFl14t7oyPyaPFgS15t8Pxrbj-UN8kjasTPNTpkCd_TzaVHfwszPJtSj71JMtA6hR9KBUCxJuIbTditS0-wCNXHSrdS-ot4qMPWtSaLNNBwNBTVDRoJg03Guw8v71zx')"></div>
-                  <div>
-                    <a class="text-white font-bold text-base hover:text-[#007BFF] hover:underline leading-tight" href="#">Building a CI/CD Pipeline with Jenkins and GitHub</a>
-                    <p class="text-sm text-[#666666] mt-1">by Sarah Brown</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </div>
-    <footer class="bg-[#111a22] border-t border-solid border-b-[#111a22] mt-12 py-8 px-10">
-      <div class="max-w-[1280px] mx-auto text-center text-[#666666] text-sm">
-        <p>© 2025 PullMeIn. All rights reserved.</p>
-        <div class="flex justify-center gap-4 mt-2">
-          <a class="hover:text-[#007BFF]" href="#">Privacy Policy</a>
-          <a class="hover:text-[#007BFF]" href="#">Terms of Service</a>
-          <a class="hover:text-[#007BFF]" href="#">Contact</a>
         </div>
-      </div>
-    </footer>
-  </div>
+        <footer class="bg-[#111a22] border-t border-solid border-b-[#111a22] mt-12 py-8 px-10">
+            <div class="max-w-[1280px] mx-auto text-center text-[#666666] text-sm">
+                <p>© 2025 PullMeIn. All rights reserved.</p>
+                <div class="flex justify-center gap-4 mt-2">
+                    <a class="hover:text-[#007BFF]" href="#">Privacy Policy</a>
+                    <a class="hover:text-[#007BFF]" href="#">Terms of Service</a>
+                    <a class="hover:text-[#007BFF]" href="#">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </div>
-</body></html>
+</body>
+</html>
