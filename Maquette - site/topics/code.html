@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>PullMeIn Community</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap"
+          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#13a4ec",
+                "background-light": "#f6f7f8",
+                "background-dark": "#101c22",
+              },
+              fontFamily: {
+                "display": ["Public Sans"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+    <header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200/50 dark:border-gray-700/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-8">
+                    <a class="flex items-center space-x-2" href="#">
+                        <span class="material-symbols-outlined text-primary text-2xl">auto_awesome</span>
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">PullMeIn</span>
+                    </a>
+                    <nav class="hidden md:flex items-center space-x-6">
+                        <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                           href="#">Home</a>
+                        <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                           href="#">Articles</a>
+                        <a class="text-sm font-medium text-primary dark:text-primary" href="#">Topics</a>
+                        <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                           href="#">Contribute</a>
+                    </nav>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative hidden sm:block">
+                        <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">search</span>
+                        <input class="w-full sm:w-48 lg:w-64 pl-10 pr-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 border-transparent focus:ring-primary focus:border-primary focus:bg-white dark:focus:bg-background-dark text-sm"
+                               placeholder="Search..." type="search"/>
+                    </div>
+                    <button class="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-200/50 dark:hover:bg-gray-700/50 hover:text-gray-700 dark:hover:text-gray-200 transition-colors">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <button class="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-200/50 dark:hover:bg-gray-700/50 hover:text-gray-700 dark:hover:text-gray-200 transition-colors">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+                    <button>
+                        <img alt="User profile picture" class="w-9 h-9 rounded-full object-cover"
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp3_UiA6LSuAqQG_K52FiZjzC6qLasz82V8ZueoH67VRufjLU3uzKR_riQnFYAEX7gaEF4ETfedBy_uQMM7cXnfTkix2wEzdHfFYuMuleu2qhKr3kotfFUBoikZzS8AWu4rhAx2N2OGPmdM5vxseOH80M4K5k4CihbbJAIW9OhcaRkMt8uKNfa5hu8EttfRYWVBUYqJXzp8reZjv9nOx2sOibUVGzycDWz7x0m5pCJQMC2Zt08eWLx9B8MhRs5E8nZEVgUXzwRPRA"/>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-8">Topics</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a class="group flex items-center space-x-4 p-4 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+                   href="#">
+                    <div class="p-3 rounded-lg bg-primary/10 dark:bg-primary/20">
+                        <span class="material-symbols-outlined text-primary">tag</span>
+                    </div>
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                        Technology</h2>
+                </a>
+                <a class="group flex items-center space-x-4 p-4 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+                   href="#">
+                    <div class="p-3 rounded-lg bg-primary/10 dark:bg-primary/20">
+                        <span class="material-symbols-outlined text-primary">tag</span>
+                    </div>
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                        Design</h2>
+                </a>
+                <a class="group flex items-center space-x-4 p-4 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+                   href="#">
+                    <div class="p-3 rounded-lg bg-primary/10 dark:bg-primary/20">
+                        <span class="material-symbols-outlined text-primary">tag</span>
+                    </div>
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                        Programming</h2>
+                </a>
+                <a class="group flex items-center space-x-4 p-4 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+                   href="#">
+                    <div class="p-3 rounded-lg bg-primary/10 dark:bg-primary/20">
+                        <span class="material-symbols-outlined text-primary">tag</span>
+                    </div>
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                        Data Science</h2>
+                </a>
+                <a class="group flex items-center space-x-4 p-4 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+                   href="#">
+                    <div class="p-3 rounded-lg bg-primary/10 dark:bg-primary/20">
+                        <span class="material-symbols-outlined text-primary">tag</span>
+                    </div>
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                        Artificial Intelligence</h2>
+                </a>
+                <a class="group flex items-center space-x-4 p-4 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+                   href="#">
+                    <div class="p-3 rounded-lg bg-primary/10 dark:bg-primary/20">
+                        <span class="material-symbols-outlined text-primary">tag</span>
+                    </div>
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                        Machine Learning</h2>
+                </a>
+                <a class="group flex items-center space-x-4 p-4 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+                   href="#">
+                    <div class="p-3 rounded-lg bg-primary/10 dark:bg-primary/20">
+                        <span class="material-symbols-outlined text-primary">tag</span>
+                    </div>
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                        Web Development</h2>
+                </a>
+                <a class="group flex items-center space-x-4 p-4 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+                   href="#">
+                    <div class="p-3 rounded-lg bg-primary/10 dark:bg-primary/20">
+                        <span class="material-symbols-outlined text-primary">tag</span>
+                    </div>
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                        Mobile Development</h2>
+                </a>
+                <a class="group flex items-center space-x-4 p-4 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+                   href="#">
+                    <div class="p-3 rounded-lg bg-primary/10 dark:bg-primary/20">
+                        <span class="material-symbols-outlined text-primary">tag</span>
+                    </div>
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                        Cloud Computing</h2>
+                </a>
+                <a class="group flex items-center space-x-4 p-4 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+                   href="#">
+                    <div class="p-3 rounded-lg bg-primary/10 dark:bg-primary/20">
+                        <span class="material-symbols-outlined text-primary">tag</span>
+                    </div>
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                        Cybersecurity</h2>
+                </a>
+                <a class="group flex items-center space-x-4 p-4 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+                   href="#">
+                    <div class="p-3 rounded-lg bg-primary/10 dark:bg-primary/20">
+                        <span class="material-symbols-outlined text-primary">tag</span>
+                    </div>
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                        DevOps</h2>
+                </a>
+                <a class="group flex items-center space-x-4 p-4 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+                   href="#">
+                    <div class="p-3 rounded-lg bg-primary/10 dark:bg-primary/20">
+                        <span class="material-symbols-outlined text-primary">tag</span>
+                    </div>
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                        Game Development</h2>
+                </a>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
