@@ -29,7 +29,7 @@ Sur la page, allez sur la page "Contribuer" et récupérer le lien du repo Git, 
 git clone [...] # mettez le lien du repo à la place du [...]
 ```
 
-Une fois ceci fait, rendez-vous sur le dossier `articles-publiés` puis créez un fichier html dont le nom respecte le format suivant :
+Une fois ceci fait, rendez-vous sur le dossier `articles` puis créez un fichier html dont le nom respecte le format suivant :
 ```
 articles
     |____ [nom-article]-[nom-auteur]-[date : format dd/MM/YYYY].html
