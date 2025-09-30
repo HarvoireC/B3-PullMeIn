@@ -18,4 +18,25 @@ Ce fonctionnement permet de :
 
 
 
+
+
+
+
+## Contribuer au projet
+
+Sur la page, allez sur la page "Contribuer" et récupérer le lien du repo Git, clonez le ainsi sur votre ordinateur :
+```bash
+git clone [...] # mettez le lien du repo à la place du [...]
+```
+
+Une fois ceci fait, rendez-vous sur le dossier `articles-publiés` puis créez un fichier html dont le nom respecte le format suivant :
+```
+[nom-article]-[nom-auteur]-[date : format dd/MM/YYYY].html
+```
+
+
+
+
+# Credits
+
 _Project directed by : Sylvain C, Rubben S, Killian G, Corentin H_
