@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Stitch Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap"
+          rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                primary: "#13a4ec",
+                "background-light": "#f6f7f8",
+                "background-dark": "#101c22",
+              },
+              fontFamily: {
+                display: ["Public Sans"],
+              },
+              borderRadius: {
+                DEFAULT: "0.25rem",
+                lg: "0.5rem",
+                xl: "0.75rem",
+                full: "9999px",
+              },
+            },
+          },
+        };
+    </script>
+    <style>
+        body {
+          font-family: Inter, "Noto Sans", sans-serif;
+        }
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-[#111a22]">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-[#111a22] dark group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#111a22] px-10 py-3 bg-[#111a22]">
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-4 text-white">
+                    <div class="size-4">
+                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                                  fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">PullMeIn</h2>
+                </div>
+                <div class="flex items-center gap-9">
+                    <a class="text-white text-sm font-medium leading-normal"
+                       href="../articles_home_page/code.html">Home</a>
+                    <a class="text-white text-sm font-medium leading-normal" href="../topics/code.html">Topics</a>
+                    <a class="text-white text-sm font-medium leading-normal" href="../how_to_contribute/code.html">Contribute</a>
+                </div>
+            </div>
+            <div class="flex flex-1 justify-end gap-8">
+                <label class="flex flex-col min-w-40 !h-10 max-w-64">
+                    <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                        <div class="text-gray-500 flex border border-gray-300 bg-white items-center justify-center pl-4 rounded-l-lg border-r-0"
+                             data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+                            <span class="material-symbols-outlined">search</span>
+                        </div>
+                        <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-gray-300 bg-white focus:border-gray-300 h-full placeholder:text-gray-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                               placeholder="Search" value=""/>
+                    </div>
+                </label>
+                <div class="flex gap-2">
+                    <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-100 text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                        <div class="text-[#111a22]" data-icon="Bell" data-size="20px" data-weight="regular">
+                            <span class="material-symbols-outlined">notifications</span>
+                        </div>
+                    </button>
+                    <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-100 text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                        <div class="text-[#111a22]" data-icon="GearSix" data-size="20px" data-weight="regular">
+                            <span class="material-symbols-outlined">settings</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                     data-alt="User profile picture"
+                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1CYGZYU-EQx-WZyoHrufQOHTwxLeepRjAMuUkb-DuX_lWkOcUdRZwGtIWSI0B-dzqoJJamWNqDGQXVy5bN5dVoDsW5LvTl1Hfm2SCMGAtM6dyZdEQQNbMJbohsKxN31Yoy-D_k5F09c2Zb2Aav7YkYA2RqQNMEFRKfgCJjKxZXQy6MKsoQobhULxlWAniQMaLYSXdoPWWjPUP3I_r2OlUqVfuLLydk88lwGkCYsk_rYAV5CipsVruvjDRKYFIZy60nWF31Xkh79l0");'></div>
+            </div>
+        </header>
+        <main class="flex-1">
+            <div class="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
+                <div class="mb-8 text-center">
+                    <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">Articles</h1>
+                    <p class="mt-2 text-lg text-slate-600 dark:text-slate-400">Explore the latest articles and tutorials
+                        from the community.</p>
+                </div>
+                <div class="mb-8 flex flex-wrap items-center justify-center gap-2">
+                    <button class="rounded-lg bg-primary/10 px-4 py-2 text-sm font-semibold text-primary dark:bg-primary/20">
+                        All
+                    </button>
+                    <button class="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 hover:bg-primary/10 hover:text-primary dark:text-slate-300 dark:hover:bg-primary/20">
+                        Technology
+                    </button>
+                    <button class="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 hover:bg-primary/10 hover:text-primary dark:text-slate-300 dark:hover:bg-primary/20">
+                        Design
+                    </button>
+                    <button class="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 hover:bg-primary/10 hover:text-primary dark:text-slate-300 dark:hover:bg-primary/20">
+                        Productivity
+                    </button>
+                    <button class="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 hover:bg-primary/10 hover:text-primary dark:text-slate-300 dark:hover:bg-primary/20">
+                        Business
+                    </button>
+                </div>
+                <div class="space-y-6">
+                    <div class="group cursor-pointer rounded-lg bg-white shadow-sm transition-all duration-300 hover:shadow-lg dark:bg-background-dark/50 dark:hover:shadow-primary/10">
+                        <a href="../article_detail_page/code.html">
+                            <img alt="Article thumbnail"
+                                 class="h-56 w-full rounded-t-lg object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-c_B-F3pObOMjR1smpsNjS3EFgeopMhutfsCUbrhI8Pcm1EPPBj3h8XRS3ZoQojPtxUdDRmgBXkHvVMJ-LmW64d4kmX1-qtY9MRul4wi8Ik-paJ1x-FBQBGyzmaw5EcLuTWjPz_wMt2QSZye_puo6INHBjYTh6KwfA_4er6V-YgBPad3OuRlVTuZSfISNvH07VAEJI9EfkRl5bqlXT9sKG-BGxzygjjjfSq_P_29y6udAVUzsN5HFaTqbc6u835SdMKRpWA7rSAA"/>
+                            <div class="p-6">
+                                <h3 class="mb-2 text-2xl font-bold text-slate-900 dark:text-white">Mastering Advanced
+                                    JavaScript
+                                    Techniques</h3>
+                                <p class="mb-4 text-slate-600 dark:text-slate-400">Dive deep into advanced JavaScript
+                                    concepts
+                                    and techniques to level up your skills. This article covers closures, prototypes,
+                                    async/await, and more with practical examples.</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">By Alex Johnson · Jan 15, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="group cursor-pointer rounded-lg bg-white shadow-sm transition-all duration-300 hover:shadow-lg dark:bg-background-dark/50 dark:hover:shadow-primary/10">
+                        <a href="../article_detail_page/code.html">
+                            <img alt="Article thumbnail"
+                                 class="h-56 w-full rounded-t-lg object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJmUfTZWH17yRHL8naXbcw-FamGdMlLog8lkdRSTKgDYoku_d1FzdpRQJ064tjOqEA7_Zt4uFmeqVjEwIkjBLw8V7p9Zy4iMHRhTyQgnr5w_WnwGJHhNxgZIFc8ybn90eLHwOrm6G1Rg1-HGb7xl3AEzagtLJbfE8da3RrTnu6hcBFliX-fPcHUpxbGGlMkIU9GuZe81QoLtXN166nzXPHUj9n0hJKBm8mWLGDr7kzdjpUU1DkxaWbpFMfyGE3ilCqZmKdp-yUka4"/>
+                            <div class="p-6">
+                                <h3 class="font-semibold text-2xl font-bold text-slate-900 dark:text-white">Building
+                                    Scalable
+                                    Web Applications with Node.js</h3>
+                                <p class="mb-4 text-slate-600 dark:text-slate-400">Learn how to build robust and
+                                    scalable
+                                    web
+                                    applications using Node.js. We explore best practices for architecture, performance
+                                    optimization, and deployment.</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">By Sarah Lee · Jan 20, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="group cursor-pointer rounded-lg bg-white shadow-sm transition-all duration-300 hover:shadow-lg dark:bg-background-dark/50 dark:hover:shadow-primary/10">
+                        <a href="../article_detail_page/code.html">
+                            <img alt="Article thumbnail"
+                                 class="h-56 w-full rounded-t-lg object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU6QtnyxC61O6t3nEPxo80A8fZMsTOrFZa1gakwDv7jtLcurbm2zMRzToSPGsGWOixbdkr27NkMC0Ecpa7Reo_TbQPswARwkypEe4bzuBUuo6jQyNcJce1uAVWgEH2fhGv_dhzpp4l4FLZFrdksDx3K-C7RVH91_cc_WqDDw4mkkRBLFF_v8ipPwqUZNxo5uPFMjp91uCvaBXfoHOkmUO9Izj5Ma367f0EioJf4GsWtUHepNu9Xibt50-QSLyWUvT1H7XCWGFxBqk"/>
+                            <div class="p-6">
+                                <h3 class="font-semibold text-2xl font-bold text-slate-900 dark:text-white">The Future
+                                    of
+                                    UI/UX
+                                    Design: Trends and Tools</h3>
+                                <p class="mb-4 text-slate-600 dark:text-slate-400">Discover the latest trends shaping
+                                    the
+                                    future
+                                    of UI/UX design. From AI-powered tools to immersive experiences, we cover what's
+                                    next in
+                                    the
+                                    design world.</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">By David Chen · Jan 18, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="group cursor-pointer rounded-lg bg-white shadow-sm transition-all duration-300 hover:shadow-lg dark:bg-background-dark/50 dark:hover:shadow-primary/10">
+                        <a href="../article_detail_page/code.html">
+                            <img alt="Article thumbnail"
+                                 class="h-56 w-full rounded-t-lg object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbZaR73ZQqDVLsn5HUfI83d6f7zIDtqUE9smF-oeglCVV80D76IWpHyBeugOowqvH5l6mvtN72QcWYwdkhKPZG5daCO_RG7frDQRtach3T4TjJX8oS_FlqzMjKUe6tNZWriFW9NMKEoM34OP2soTKYxuV7w4aejTLc_n4G_wp1yFYslwuPtrJkkEIAFOqrAMhvUTkJnTxoowkd8ujuWw_JHRDRtOAF_JKhdiSDQ0ppHRpcm9Y9xsgfV5iwrThimr8ari0OMlhywNE"/>
+                            <div class="p-6">
+                                <h3 class="font-semibold text-2xl font-bold text-slate-900 dark:text-white">Introduction
+                                    to
+                                    Data
+                                    Science with Python</h3>
+                                <p class="mb-4 text-slate-600 dark:text-slate-400">A beginner-friendly guide to data
+                                    science
+                                    with Python. Learn the fundamentals of data analysis, visualization, and machine
+                                    learning
+                                    using popular libraries like Pandas and Scikit-learn.</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">By Emily White · Jan 16, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-[#111a22] border-t border-solid border-b-[#111a22] mt-12 py-8 px-10">
+            <div class="max-w-[1280px] mx-auto text-center text-[#666666] text-sm">
+                <p>© 2025 PullMeIn. All rights reserved.</p>
+                <div class="flex justify-center gap-4 mt-2">
+                    <a class="hover:text-[#007BFF]" href="#">Privacy Policy</a>
+                    <a class="hover:text-[#007BFF]" href="#">Terms of Service</a>
+                    <a class="hover:text-[#007BFF]" href="#">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
