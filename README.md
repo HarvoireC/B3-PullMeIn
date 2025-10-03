@@ -60,7 +60,7 @@ Ensuite créez votre article au format HTML, nous conseillons fortement de respe
 
 ```
 
-Puis tapez les commandes git pour envoyer votre code, que nous puissions la revoir et la valider ou non :
+Puis tapez les commandes git pour envoyer votre code:
 ```bash
 git add .
 git commit -m "[nom de votre article]-[date format dd/MM/YYYY] ajout article"
