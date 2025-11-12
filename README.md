@@ -60,6 +60,22 @@ Ensuite créez votre article au format HTML, nous conseillons fortement de respe
 
 ```
 
+Evidemment, avoir votre article c'est bien beau, mais il faut tout de même que le public puisse y accéder n'est-ce pas ? Pour cela rendez vous sur la page HomePage.html situé juste en dessous du dossier `articles` :
+```
+|____ articles
+          |____ [nom-article]-[nom-auteur]-[date : format dd/MM/YYYY].html
+|____ HomePage.html
+```
+
+Puis cherchez le div dont le nom de classe est "articles-list-container", puis dans ce div, après tous les autres divs d'autres articles publiés avant le vôtre, et ajoutez-y ce bout de code (attention à l'indentation) :
+```html
+<div class="article-container">
+    <h2>Titre de votre article</h2>
+    <p>Vos crédits (nom, date de publication, etc)</p>
+    <a href="./articles/[nom-article]-[nom-auteur]-[date : format dd/MM/YYYY].html" class="view-article-button">Read Article</a>
+</div>
+```
+
 Puis tapez les commandes git pour envoyer votre code:
 ```bash
 git add .
@@ -68,6 +84,21 @@ git pr create --label "demande ajout article" --web
 ```
 
 Vous n'avez plus qu'a attendre que votre article soit validé.
+
+
+__***ATTENTION !***__
+
+Votre article sera refusé si il ne contient pas les éléments suivants, ou si les éléments suivants sont érronés ou incomplets :
+
+```TODO
+[ ] Le fichier html respecte strictement le format attendu
+[ ] La vérification doit être faite
+[ ] Un titre clair, simple et précis annonçant le contenu de votre article
+[ ] Un contenu clair et précis au possible, selon votre article, lisible avec des informations claires et cohérentes
+[ ] Des sources claires, exactes et précises
+[ ] Des liens fonctionnels, à jour et exacts pour CHAQUE source citée
+[ ] Au minimum une image et une miniature
+```
 
 
 
