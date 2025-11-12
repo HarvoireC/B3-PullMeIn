@@ -1,0 +1,62 @@
+<h1 class="text-white tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">
+    Introduction à l’Intelligence Artificielle et ses Applications
+</h1>
+<div class="flex p-4 @container">
+    <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
+        <div class="flex gap-4">
+            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12"
+                 data-alt="Author profile picture"
+                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdk4_phqmR1KS2TZCjFbTFGcMC4DU2n9YHZ8KZBjUDrYu_zpk3R1qSNRQpdXhVC68HaILpEWMwfGiBslTCUEtoM86dA66jvpBPtPDC-oPY3mCbbwMGmiXgizMP25PvOW4lDdY0XLO8lOBBsrHsY2pslHel9M3G8TbSZRpMc-cRUo3sd2irKgjHQxtu3X1nqYoHSOG-SIrH9dWgGAj89sAW3lIOCoTNR7lDOKl0M4D1uxekRSfF0fGHRZCuVRJwZQqwfK7CXhDPtihH");'></div>
+            <div class="flex flex-col justify-center">
+                <p class="text-[#007BFF] text-base font-medium leading-normal cursor-pointer hover:underline">
+                    Louis Astori</p>
+                <p class="text-[#666666] text-sm font-normal leading-normal">November 12, 2025 · 6 min read</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p class="text-white text-base font-normal leading-relaxed pb-3 pt-1 px-4">
+    L’Intelligence Artificielle (IA) transforme la manière dont nous interagissons avec la technologie. Des assistants virtuels aux systèmes de recommandation, l’IA est partout et continue de révolutionner différents secteurs.
+</p>
+<p class="text-white text-base font-normal leading-relaxed pb-3 pt-1 px-4">
+    Dans cet article, nous allons explorer les concepts fondamentaux de l’IA, ses applications pratiques, ainsi que les avantages et les défis associés à son adoption.
+</p>
+
+<h3 class="text-white tracking-light text-2xl font-bold leading-tight px-4 text-left pb-2 pt-5">
+    Principes clés de l’IA</h3>
+<ul class="list-disc list-inside text-white text-base font-normal leading-relaxed pb-3 pt-1 px-4 space-y-2">
+    <li><strong>Apprentissage automatique :</strong> L’IA apprend à partir de données pour améliorer ses performances.</li>
+    <li><strong>Traitement du langage naturel :</strong> Permet aux machines de comprendre et générer du texte humain.</li>
+    <li><strong>Vision par ordinateur :</strong> L’IA analyse et interprète les images et vidéos.</li>
+    <li><strong>Systèmes experts :</strong> L’IA fournit des recommandations ou décisions basées sur des règles prédéfinies.</li>
+</ul>
+
+<h3 class="text-white tracking-light text-2xl font-bold leading-tight px-4 text-left pb-2 pt-5">
+    Exemple de code</h3>
+<div class="px-4 py-2">
+    <div class="bg-[#272822] rounded-lg overflow-hidden">
+        <pre class="p-4 text-white text-sm overflow-x-auto"><code class="language-python"
+          style="font-family: 'Courier New', Courier, monospace;">
+# Exemple simple de classification avec scikit-learn
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+
+# Charger le jeu de données Iris
+iris = load_iris()
+X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2, random_state=42)
+
+# Créer le modèle
+clf = RandomForestClassifier(n_estimators=100)
+clf.fit(X_train, y_train)
+
+# Prédire et afficher l’exactitude
+accuracy = clf.score(X_test, y_test)
+print(f"Accuracy: {accuracy}")
+        </code></pre>
+    </div>
+</div>
+<p class="text-white text-base font-normal leading-relaxed pb-3 pt-1 px-4">
+    Ce simple exemple montre comment entraîner un modèle de classification avec Python et scikit-learn pour prédire des catégories à partir de données.
+</p>
