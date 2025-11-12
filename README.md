@@ -106,4 +106,4 @@ Votre article sera refusé si il ne contient pas les éléments suivants, ou si 
 
 # Credits
 
-_Project directed by : Sylvain C, Rubben S, Killian G, Corentin H_
+_Project directed by : Louis A, Killian G, Corentin H_
