@@ -29,9 +29,9 @@ Sur la page, allez sur la page "Contribuer" et récupérer le lien du repo Git, 
 git clone [...] # mettez le lien du repo à la place du [...]
 ```
 
-Une fois ceci fait, rendez-vous sur le dossier `articles` puis créez un fichier html dont le nom respecte le format suivant :
+Une fois ceci fait, rendez-vous sur le dossier `article_detail_page` puis créez un fichier html dont le nom respecte le format suivant :
 ```
-articles
+article_detail_page
     |____ [nom-article]-[nom-auteur]-[date : format dd/MM/YYYY].html
 ```
 
@@ -60,11 +60,12 @@ Ensuite créez votre article au format HTML, nous conseillons fortement de respe
 
 ```
 
-Evidemment, avoir votre article c'est bien beau, mais il faut tout de même que le public puisse y accéder n'est-ce pas ? Pour cela rendez vous sur la page HomePage.html situé juste en dessous du dossier `articles` :
+Evidemment, avoir votre article c'est bien beau, mais il faut tout de même que le public puisse y accéder n'est-ce pas ? Pour cela rendez vous sur la page HomePage.html situé dans le dossier `articles_home_page` :
 ```
-|____ articles
+|____ article_detail_page
           |____ [nom-article]-[nom-auteur]-[date : format dd/MM/YYYY].html
-|____ HomePage.html
+|____ articles_home_page
+          |____ HomePage.html
 ```
 
 Puis cherchez le div dont le nom de classe est "articles-list-container", puis dans ce div, après tous les autres divs d'autres articles publiés avant le vôtre, et ajoutez-y ce bout de code (attention à l'indentation) :
