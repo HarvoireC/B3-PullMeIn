@@ -1,0 +1,15 @@
+{
+  "title": "Mon Article",
+  "author": "Corentin",
+  "date": "22/11/2025",
+  "thumbnail": "https://i.ytimg.com/vi/RG6DsvgW84o/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLA2ZuvAqb2baZEZv7KD1cWrxSpe6w",
+  "images": [
+    "https://i.ytimg.com/vi/RG6DsvgW84o/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLA2ZuvAqb2baZEZv7KD1cWrxSpe6w"
+  ],
+  "sources": [
+    "https://www.youtube.com"
+  ],
+  "content": "Le contenu de mon article de test",
+  "excerpt": "Mon article pour tester",
+  "createdAt": "2025-11-22T23:57:45.373Z"
+}
