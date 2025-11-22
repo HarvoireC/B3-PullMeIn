@@ -35,5 +35,14 @@ const articles = [
     "thumbnail": "https://exemple.com/images/nextjs-thumb.jpg",
     "excerpt": "test",
     "detailPath": "article_detail_page/2025-11-22-test-test.html"
+  },
+  {
+    "id": 5,
+    "title": "testtest",
+    "author": "astori",
+    "date": "22/11/2025",
+    "thumbnail": "https://www.teradata.com/hs-fs/hubfs/What-Is-Sports-Data-Analytics.jpg",
+    "excerpt": "L’article explique comment l’analytique sportive consiste à collecter, analyser et interpréter des données pour améliorer la prise de décision dans le sport (coachs, athlètes, équipes)",
+    "detailPath": "article_detail_page/2025-11-22-testtest-astori.html"
   }
 ];
