@@ -8,8 +8,34 @@ function isNonEmptyString(value) {
   return typeof value === 'string' && value.trim().length > 0;
 }
 
+
+const FORBIDDEN_PATTERNS = [
+  /<\s*script\b/i,
+  /javascript:/i,
+  /on\w+\s*=/i,           
+  /<\s*iframe\b/i,
+  /<\s*style\b/i,
+  /<\s*link\b/i,
+  /<\s*meta\b/i,
+  /<\s*object\b/i,
+  /<\s*embed\b/i,
+];
+
+
+function findDangerousContent(value) {
+  if (typeof value !== 'string') return null;
+  for (const pattern of FORBIDDEN_PATTERNS) {
+    if (pattern.test(value)) {
+      return `contient un motif interdit (${pattern})`;
+    }
+  }
+  return null;
+}
+
 function validateArticle(article, fileName) {
   const errors = [];
+
+  // Champs obligatoires
   if (!isNonEmptyString(article.title)) errors.push('title manquant');
   if (!isNonEmptyString(article.author)) errors.push('author manquant');
   if (!isNonEmptyString(article.date)) errors.push('date manquante');
@@ -19,8 +45,45 @@ function validateArticle(article, fileName) {
     errors.push('sources manquantes');
   }
 
+  const fieldsToCheck = [
+    ['title', article.title],
+    ['author', article.author],
+    ['date', article.date],
+    ['thumbnail', article.thumbnail],
+    ['excerpt', article.excerpt],
+    ['content', article.content],
+  ];
+
+  for (const [fieldName, value] of fieldsToCheck) {
+    const danger = findDangerousContent(value);
+    if (danger) {
+      errors.push(`${fieldName} ${danger}`);
+    }
+  }
+
+  if (Array.isArray(article.sources)) {
+    article.sources.forEach((src, index) => {
+      let value = src;
+      if (src && typeof src === 'object') {
+        if (src.label) {
+          const dangerLabel = findDangerousContent(src.label);
+          if (dangerLabel) {
+            errors.push(`sources[${index}].label ${dangerLabel}`);
+          }
+        }
+        value = src.url;
+      }
+
+      const dangerUrl = findDangerousContent(value);
+      if (dangerUrl) {
+        errors.push(`sources[${index}] ${dangerUrl}`);
+      }
+    });
+  }
+
   if (errors.length) {
-    console.error(`Erreurs dans ${fileName}: ${errors.join(', ')}`);
+    console.error(`Erreurs dans ${fileName}:`);
+    errors.forEach(e => console.error('  -', e));
     return false;
   }
 
