@@ -1,0 +1,15 @@
+{
+  "title": "test",
+  "author": "test",
+  "date": "20/10/2025",
+  "thumbnail": "https://exemple.com/images/nextjs-thumb.jpg",
+  "images": [
+    "https://exemple.com/images/nextjs-thumb.jpg"
+  ],
+  "sources": [
+    "https://exemple.com/images/nextjs-thumb.jpg"
+  ],
+  "content": "test",
+  "excerpt": "test",
+  "createdAt": "2025-11-22T15:52:08.753Z"
+}
