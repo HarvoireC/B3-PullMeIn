@@ -30,16 +30,19 @@ jobs:
 
       - name: Commit generated files
         run: |
-          # Vérifier s'il y a des changements
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
+          git restore package-lock.json || true
+          rm -f node_modules/.package-lock.json || true
 
-            # Ajoute uniquement ce qui est généré
-            git add article_detail_page scripts/articlesData.js
+          CHANGES="$(git status --porcelain article_detail_page scripts/articlesData.js || true)"
 
-            git commit -m "build: generate articles HTML [skip ci]"
-            git push
-          else
-            echo "Aucun changement à committer"
+          if [ -z "$CHANGES" ]; then
+            echo "Aucun changement dans les fichiers générés, rien à committer."
+            exit 0
           fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add article_detail_page scripts/articlesData.js
+          git commit -m "build: generate articles HTML [skip ci]"
+          git push
