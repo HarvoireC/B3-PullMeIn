@@ -23,20 +23,49 @@
 
   <main class="container">
     <h2>À propos de PullMeIn</h2>
-    <p>PullMeIn est une plateforme communautaire dédiée au partage d'articles techniques. Elle met l'accent sur la contribution ouverte et l'automatisation via l'intégration continue.</p>
-    <p>Ce prototype est entièrement statique (HTML/CSS/JavaScript), sans backend. Il illustre les écrans principaux et la navigation, ainsi que la gestion d'un utilisateur en localStorage.</p>
+
+    <p>
+      <strong>PullMeIn</strong> est une plateforme communautaire dédiée au partage 
+      d’articles techniques rédigés par des professionnels et des passionnés. 
+      Le projet sert également de support pédagogique pour illustrer un vrai 
+      workflow d’intégration continue.
+    </p>
+
+    <h3>Objectifs du projet</h3>
     <ul>
-      <li>Connexion ou mode invité</li>
-      <li>Liste des articles et page de détail</li>
-      <li>Formulaire de proposition (stockage local)</li>
-      <li>Style simple, moderne et responsive</li>
+      <li>Proposer une expérience de contribution simple via un formulaire en ligne.</li>
+      <li>Automatiser la création de Pull Requests et la validation des contenus avec GitHub Actions.</li>
+      <li>Assurer la qualité éditoriale et la sécurité (vérifications automatiques du contenu).</li>
+      <li>Déployer un site statique moderne via GitHub Pages.</li>
     </ul>
-    <p class="muted">Projet démo — 2025.</p>
+
+    <h3>Comment ça fonctionne&nbsp;?</h3>
+    <ol>
+      <li>L’utilisateur remplit le formulaire sur la page <em>“Proposer un article”</em>.</li>
+      <li>Une API Node.js hébergée sur <strong>Render</strong> reçoit les données et crée automatiquement une Pull Request sur GitHub.</li>
+      <li>Une pipeline <strong>GitHub Actions</strong> vérifie les fichiers JSON (champs obligatoires, liens, sécurité, etc.) et teste la génération des pages HTML.</li>
+      <li>Une fois la Pull Request validée et mergée, une autre pipeline génère les pages d’articles et met à jour la liste des articles.</li>
+      <li>Le site est ensuite servi par <strong>GitHub Pages</strong>, avec le nouvel article disponible en ligne.</li>
+    </ol>
+
+    <h3>Ce que le prototype démontre</h3>
+    <ul>
+      <li>Un site statique HTML/CSS/JavaScript déployé sur GitHub Pages.</li>
+      <li>Une API externe (Render) qui crée des Pull Requests à partir d’un simple formulaire.</li>
+      <li>Des pipelines CI/CD pour valider et générer le contenu (articles HTML, liste des articles).</li>
+      <li>Une gestion simple de l’utilisateur côté front (mode invité, pseudo en localStorage).</li>
+    </ul>
+
+    <p class="muted">Projet pédagogique – B3 Intégration continue – 2025.</p>
   </main>
 
   <script src="scripts/app.js"></script>
   <script>
-    (function(){ updateNavbarUser(); })();
+    (function () { 
+      if (typeof updateNavbarUser === 'function') {
+        updateNavbarUser();
+      }
+    })();
   </script>
 </body>
 </html>
