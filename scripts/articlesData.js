@@ -2,6 +2,15 @@
 const articles = [
   {
     "id": 1,
+    "title": "BLOG PHOTO",
+    "author": "moi",
+    "date": "22/11/2025",
+    "thumbnail": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
+    "excerpt": "Extrait du blog photo",
+    "detailPath": "article_detail_page/2025-11-22-blog-photo-moi.html"
+  },
+  {
+    "id": 2,
     "title": "Découvrir Next.js pour créer des apps modernes",
     "author": "corentin",
     "date": "10/10/2025",
@@ -10,7 +19,7 @@ const articles = [
     "detailPath": "article_detail_page/2025-11-22-decouvrir-next-js-pour-creer-des-apps-modernes-corentin.html"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Test",
     "author": "corentin",
     "date": "10/10/2025",
@@ -19,7 +28,7 @@ const articles = [
     "detailPath": "article_detail_page/2025-11-22-test-corentin.html"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "test",
     "author": "test",
     "date": "20/10/2025",
