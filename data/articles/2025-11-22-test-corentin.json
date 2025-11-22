@@ -13,3 +13,168 @@
   "excerpt": "Résumé de test",
   "createdAt": "2025-11-22T14:53:52.216Z"
 }
+[
+  {
+    "title": "Découvrir Next.js pour créer des apps modernes",
+    "author": "corentin",
+    "date": "01/10/2025",
+    "thumbnail": "https://exemple.com/images/nextjs-thumb.jpg",
+    "images": [
+      "https://exemple.com/images/nextjs-page.jpg",
+      "https://exemple.com/images/nextjs-code.jpg"
+    ],
+    "sources": [
+      "https://nextjs.org/docs",
+      "https://exemple.source.fr/nextjs-intro"
+    ],
+    "content": "<p>Next.js est un framework React qui simplifie la création d'applications web modernes, rapides et SEO-friendly.</p><h2>Rendu côté serveur et génération statique</h2><p>Avec Next.js, vous pouvez choisir entre le rendu côté serveur (SSR) et la génération statique (SSG) en fonction des besoins de votre page.</p><h2>Routage simplifié</h2><p>Le système de fichiers devient votre routeur : chaque fichier dans le dossier <code>app</code> ou <code>pages</code> correspond à une route.</p><h2>Pourquoi l'utiliser ?</h2><p>Pour bénéficier d'un excellent SEO, d'une performance optimale et d'une DX (Developer Experience) très agréable.</p>",
+    "excerpt": "Introduction rapide à Next.js pour créer des applications web performantes et bien référencées.",
+    "createdAt": "2025-11-22T15:00:00.000Z"
+  },
+  {
+    "title": "Comprendre les promesses en JavaScript",
+    "author": "corentin",
+    "date": "03/10/2025",
+    "thumbnail": "https://exemple.com/images/promises-thumb.jpg",
+    "images": [
+      "https://exemple.com/images/promise-chain.jpg"
+    ],
+    "sources": [
+      "https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+    ],
+    "content": "<p>Les promesses permettent de gérer l'asynchrone en JavaScript de manière plus lisible que les callbacks classiques.</p><h2>Créer une promesse</h2><p>Une promesse se crée avec le constructeur <code>new Promise()</code> qui reçoit une fonction contenant <code>resolve</code> et <code>reject</code>.</p><h2>then, catch et finally</h2><p>Les méthodes <code>then</code>, <code>catch</code> et <code>finally</code> permettent de réagir au succès, à l'échec et à la fin de la promesse.</p><h2>Vers async/await</h2><p>Les promesses sont la base de la syntaxe <code>async/await</code>, qui rend le code asynchrone encore plus simple à lire.</p>",
+    "excerpt": "Petit tour d'horizon des promesses en JavaScript pour mieux gérer l'asynchrone.",
+    "createdAt": "2025-11-22T15:01:00.000Z"
+  },
+  {
+    "title": "Débuter avec Java et la programmation orientée objet",
+    "author": "corentin",
+    "date": "05/10/2025",
+    "thumbnail": "https://exemple.com/images/java-oop-thumb.jpg",
+    "images": [
+      "https://exemple.com/images/java-class.jpg",
+      "https://exemple.com/images/java-diagramme.jpg"
+    ],
+    "sources": [
+      "https://docs.oracle.com/javase/tutorial/java/concepts/",
+      "https://exemple.source.fr/java-oop"
+    ],
+    "content": "<p>Java est un langage orienté objet très utilisé dans l'industrie, notamment pour les applications backend et Android.</p><h2>Classes et objets</h2><p>Une classe est un modèle, un objet est une instance de cette classe. Les attributs représentent l'état et les méthodes le comportement.</p><h2>Encapsulation, héritage, polymorphisme</h2><p>Ces trois piliers de l'OO permettent de structurer votre code, de le réutiliser et de le rendre plus maintenable.</p><h2>Bonnes pratiques</h2><p>Utilisez des noms de classes explicites, évitez les méthodes trop longues et écrivez des tests unitaires pour vos classes critiques.</p>",
+    "excerpt": "Les bases de la programmation orientée objet en Java : classes, objets et bonnes pratiques.",
+    "createdAt": "2025-11-22T15:02:00.000Z"
+  },
+  {
+    "title": "Créer un portfolio développeur moderne",
+    "author": "corentin",
+    "date": "07/10/2025",
+    "thumbnail": "https://exemple.com/images/portfolio-thumb.jpg",
+    "images": [
+      "https://exemple.com/images/portfolio-home.jpg"
+    ],
+    "sources": [
+      "https://exemple.source.fr/portfolio-dev"
+    ],
+    "content": "<p>Un bon portfolio doit présenter clairement qui vous êtes, ce que vous savez faire et vos projets les plus importants.</p><h2>Les sections essentielles</h2><p>Ajoutez une courte présentation, une liste de compétences, quelques projets détaillés et un moyen de vous contacter facilement.</p><h2>Mettre en avant ses projets</h2><p>Expliquez le problème, la solution, la stack utilisée et ce que vous avez appris sur chaque projet.</p><h2>Soigner le design</h2><p>Une mise en page simple, responsive et lisible est souvent plus efficace qu'un design trop chargé.</p>",
+    "excerpt": "Comment construire un portfolio de développeur clair, moderne et convaincant.",
+    "createdAt": "2025-11-22T15:03:00.000Z"
+  },
+  {
+    "title": "Introduction à Git et GitHub pour les débutants",
+    "author": "corentin",
+    "date": "09/10/2025",
+    "thumbnail": "https://exemple.com/images/git-thumb.jpg",
+    "images": [
+      "https://exemple.com/images/git-commit.jpg",
+      "https://exemple.com/images/github-repo.jpg"
+    ],
+    "sources": [
+      "https://git-scm.com/doc",
+      "https://docs.github.com/"
+    ],
+    "content": "<p>Git est l'outil de contrôle de version de référence, et GitHub la plateforme la plus utilisée pour héberger le code.</p><h2>Les commandes de base</h2><p>Commencez par maîtriser <code>git init</code>, <code>git add</code>, <code>git commit</code>, <code>git status</code> et <code>git log</code>.</p><h2>Travailler avec GitHub</h2><p>Créez un dépôt distant, poussez votre code avec <code>git push</code> et apprenez à cloner un projet existant.</p><h2>Bonnes habitudes</h2><p>Faites des commits fréquents, avec des messages clairs, et utilisez des branches pour développer de nouvelles fonctionnalités.</p>",
+    "excerpt": "Les bases indispensables de Git et GitHub pour versionner et partager votre code.",
+    "createdAt": "2025-11-22T15:04:00.000Z"
+  },
+  {
+    "title": "Améliorer les performances d’un site web",
+    "author": "corentin",
+    "date": "11/10/2025",
+    "thumbnail": "https://exemple.com/images/performance-thumb.jpg",
+    "images": [
+      "https://exemple.com/images/lighthouse-report.jpg"
+    ],
+    "sources": [
+      "https://web.dev/fast/",
+      "https://exemple.source.fr/performance-web"
+    ],
+    "content": "<p>Un site rapide améliore l'expérience utilisateur et le référencement sur les moteurs de recherche.</p><h2>Optimisation des images</h2><p>Compressez vos images, utilisez des formats modernes comme WebP et servez des tailles adaptées à l'écran.</p><h2>Minification et bundling</h2><p>Réduisez la taille de vos fichiers CSS et JavaScript en les minifiant et en limitant le nombre de bundles.</p><h2>Mesurer pour progresser</h2><p>Utilisez des outils comme Lighthouse ou PageSpeed Insights pour identifier les points à améliorer.</p>",
+    "excerpt": "Quelques techniques simples pour rendre votre site web plus rapide et agréable à utiliser.",
+    "createdAt": "2025-11-22T15:05:00.000Z"
+  },
+  {
+    "title": "Découvrir l’algorithme A* en pathfinding",
+    "author": "corentin",
+    "date": "13/10/2025",
+    "thumbnail": "https://exemple.com/images/a-star-thumb.jpg",
+    "images": [
+      "https://exemple.com/images/grid-pathfinding.jpg",
+      "https://exemple.com/images/a-star-steps.jpg"
+    ],
+    "sources": [
+      "https://exemple.source.fr/a-star-pathfinding"
+    ],
+    "content": "<p>A* est un algorithme de pathfinding très utilisé dans les jeux vidéo pour trouver un chemin optimal entre deux points.</p><h2>Principe de base</h2><p>L'algorithme explore une grille en choisissant à chaque étape le noeud avec le coût total estimé le plus faible.</p><h2>Fonction heuristique</h2><p>La fonction heuristique (souvent la distance de Manhattan ou euclidienne) estime la distance restante jusqu'à la cible.</p><h2>Applications</h2><p>On le retrouve dans les jeux de stratégie, les RPG, mais aussi dans certains systèmes de navigation.</p>",
+    "excerpt": "Présentation de l'algorithme A* pour le pathfinding, très utilisé dans le développement de jeux.",
+    "createdAt": "2025-11-22T15:06:00.000Z"
+  },
+  {
+    "title": "Concevoir une API REST propre et maintenable",
+    "author": "corentin",
+    "date": "15/10/2025",
+    "thumbnail": "https://exemple.com/images/api-rest-thumb.jpg",
+    "images": [
+      "https://exemple.com/images/api-routes.jpg"
+    ],
+    "sources": [
+      "https://restfulapi.net/",
+      "https://exemple.source.fr/api-rest-bonnes-pratiques"
+    ],
+    "content": "<p>Une API REST bien conçue facilite l'intégration, la maintenance et l'évolution de vos services backend.</p><h2>Nommage des ressources</h2><p>Utilisez des noms au pluriel et cohérents, par exemple <code>/users</code>, <code>/posts</code>, <code>/comments</code>.</p><h2>Utilisation des verbes HTTP</h2><p><code>GET</code> pour lire, <code>POST</code> pour créer, <code>PUT/PATCH</code> pour mettre à jour et <code>DELETE</code> pour supprimer.</p><h2>Gestion des erreurs</h2><p>Retournez des codes HTTP adaptés (400, 401, 404, 500, etc.) et des messages d'erreur clairs dans la réponse JSON.</p>",
+    "excerpt": "Quelques bonnes pratiques pour concevoir une API REST claire, cohérente et facile à utiliser.",
+    "createdAt": "2025-11-22T15:07:00.000Z"
+  },
+  {
+    "title": "Se lancer dans le développement de jeux avec Unity",
+    "author": "corentin",
+    "date": "17/10/2025",
+    "thumbnail": "https://exemple.com/images/unity-thumb.jpg",
+    "images": [
+      "https://exemple.com/images/unity-editor.jpg",
+      "https://exemple.com/images/unity-scene.jpg"
+    ],
+    "sources": [
+      "https://unity.com/learn",
+      "https://exemple.source.fr/unity-debutant"
+    ],
+    "content": "<p>Unity est un moteur de jeu très populaire qui permet de créer des jeux 2D et 3D pour de nombreuses plateformes.</p><h2>Prendre en main l'éditeur</h2><p>Apprenez à manipuler la scène, la hiérarchie d'objets et l'inspecteur pour configurer vos GameObjects.</p><h2>Scripts en C#</h2><p>La logique du jeu se fait en C#. Vous pouvez réagir aux événements du cycle de vie comme <code>Start()</code> et <code>Update()</code>.</p><h2>Prototypes rapides</h2><p>Commencez petit, par exemple avec un jeu de plateforme simple, pour comprendre les bases du moteur.</p>",
+    "excerpt": "Un tour d'horizon de Unity pour créer vos premiers jeux vidéo en 2D ou 3D.",
+    "createdAt": "2025-11-22T15:08:00.000Z"
+  },
+  {
+    "title": "Découvrir les bases du CSS moderne (Flexbox & Grid)",
+    "author": "corentin",
+    "date": "19/10/2025",
+    "thumbnail": "https://exemple.com/images/css-layout-thumb.jpg",
+    "images": [
+      "https://exemple.com/images/flexbox-layout.jpg",
+      "https://exemple.com/images/grid-layout.jpg"
+    ],
+    "sources": [
+      "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+      "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout"
+    ],
+    "content": "<p>Flexbox et CSS Grid ont simplifié la création de mises en page modernes et responsives.</p><h2>Quand utiliser Flexbox</h2><p>Flexbox est idéal pour aligner des éléments sur une seule dimension (ligne ou colonne), comme des barres de navigation.</p><h2>Quand utiliser Grid</h2><p>CSS Grid est parfait pour les mises en page en deux dimensions, avec des lignes et des colonnes définies.</p><h2>Combiner les deux</h2><p>On peut utiliser Grid pour la structure globale de la page, puis Flexbox à l'intérieur de certains blocs pour affiner l'alignement.</p>",
+    "excerpt": "Comprendre comment Flexbox et CSS Grid permettent de créer des layouts modernes et responsives.",
+    "createdAt": "2025-11-22T15:09:00.000Z"
+  }
+]
