@@ -1,0 +1,16 @@
+{
+  "title": "Découvrir Next.js pour créer des apps modernes",
+  "author": "corentin",
+  "date": "10/10/2025",
+  "thumbnail": "https://nextjs.org/static/blog/next-13/twitter-card.png",
+  "images": [
+    "https://nextjs.org/static/blog/next-13/twitter-card.png",
+    "https://nextjs.org/static/images/learn/foundations/nextjs.svg"
+  ],
+  "sources": [
+    "https://nextjs.org/"
+  ],
+  "content": "<p>Next.js est un framework basé sur React qui permet de créer facilement des applications web modernes, rapides et optimisées pour le SEO.</p><h2>Qu’est-ce que Next.js&nbsp;?</h2><p>Next.js ajoute une couche au-dessus de React pour gérer le routage, le rendu côté serveur, la génération statique, l’optimisation des assets et la configuration des outils (bundler, compilateur, etc.). Vous pouvez ainsi vous concentrer sur le produit plutôt que sur la configuration.</p><h2>Les principaux avantages</h2><ul><li><strong>Performance</strong> : rendu côté serveur et génération statique pour des pages très rapides.</li><li><strong>SEO</strong> : les pages étant rendues côté serveur, les moteurs de recherche peuvent les analyser plus facilement.</li><li><strong>DX (Developer Experience)</strong> : hot reload, erreurs détaillées, outils intégrés pour les images et les polices.</li></ul><h2>Routage basé sur le système de fichiers</h2><p>Next.js utilise un router basé sur les fichiers : chaque fichier dans <code>app/</code> (App Router) ou <code>pages/</code> (Pages Router) correspond à une route. Par exemple, <code>app/blog/page.tsx</code> devient la route <code>/blog</code>.</p><h2>Commencer un projet</h2><p>Pour créer rapidement une nouvelle application Next.js, vous pouvez utiliser la commande suivante :</p><pre><code>npx create-next-app@latest mon-projet</code></pre><p>Ensuite, lancez le serveur de développement avec :</p><pre><code>cd mon-projet\\nnpm run dev</code></pre><p>Votre application sera accessible sur <code>http://localhost:3000</code>.</p><h2>Aller plus loin</h2><p>La documentation officielle et le tutoriel interactif proposent un parcours complet pour apprendre à utiliser les fonctionnalités modernes de Next.js (App Router, Server Components, data fetching, etc.).</p>",
+  "excerpt": "Présentation de Next.js, le framework React qui simplifie la création d’applications web modernes, rapides et optimisées pour le SEO.",
+  "createdAt": "2025-11-22T15:39:58.013Z"
+}
