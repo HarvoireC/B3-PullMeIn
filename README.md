@@ -46,21 +46,28 @@ Chaque pull request est ensuite validée par une pipeline GitHub (CI) ainsi que 
 ## Structure du projet
 
 ```txt
-.
-|____ data/
-|     |____ articles/
-|           |____ YYYY-MM-DD-slug-auteur.json
+B3-PullMeIn/
+├── api/
+│   ├── github.js
+│   ├── server.js
+│   └── validation.js
 |
-|____ article_detail_page/
-|     |____ [slug]-[auteur]-[date : format dd/MM/YYYY].html
+├── article_detail_page/
+│   ├── [slug]-[auteur]-[date : format dd/MM/YYYY].html
 |
-|____ articles_home_page/
-|     |____ HomePage.html
+├── data/
+│   └── articles/
+│       ├── [slug]-[auteur]-[date : format dd/MM/YYYY].json
 |
-|____ scripts/
-|     |____ generate-articles.js      # Génération HTML à partir de data/articles
-|     |____ validate-articles.js      # Validation du contenu des articles
+├── scripts/
+│   ├── app.js
+│   ├── articlesData.js
+│   ├── generateArticles.js
+│   └── validateArticles.js
 |
-|____ .github/
-      |____ workflows/
-            |____ ci.yml              # Pipeline GitHub Actions
+├── about.html
+├── article.html
+├── articles.html
+├── index.html
+├── styles.css
+└── submit.html
