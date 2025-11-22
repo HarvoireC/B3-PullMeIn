@@ -29,12 +29,27 @@
   <script src="scripts/app.js"></script>
   <script src="scripts/articlesData.js"></script>
   <script>
-    (function(){
-      updateNavbarUser();
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof updateNavbarUser === 'function') {
+        updateNavbarUser();
+      }
+
       const grid = document.getElementById('articlesGrid');
-      function cardTemplate(a){
+      if (!grid) return;
+
+      // On s'assure d'utiliser la variable GLOBALE "articles"
+      const list = window.articles;
+
+      if (!Array.isArray(list) || list.length === 0) {
+        grid.innerHTML = '<p class="muted">Aucun article pour le moment.</p>';
+        return;
+      }
+
+      function cardTemplate(a) {
         const thumb = a.thumbnail || '';
-        const img = `<img src="${thumb}" alt="Vignette - ${a.title}" onerror="this.style.display='none'">`;
+        const img = thumb
+          ? `<img src="${thumb}" alt="Vignette - ${a.title}" onerror="this.style.display='none'>`
+          : '';
         const href = a.detailPath ? a.detailPath : `article.html?id=${encodeURIComponent(a.id)}`;
         return `
           <article class="card">
@@ -49,12 +64,10 @@
             </div>
           </article>`;
       }
-      if (!window.articles || !Array.isArray(articles) || articles.length===0){
-        grid.innerHTML = '<p class="muted">Aucun article pour le moment.</p>';
-        return;
-      }
-      grid.innerHTML = articles.map(cardTemplate).join('');
-    })();
+
+      grid.innerHTML = list.map(cardTemplate).join('');
+    });
   </script>
 </body>
 </html>
+
