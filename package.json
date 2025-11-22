@@ -1,0 +1,17 @@
+{
+  "name": "pullmein",
+  "version": "1.0.0",
+  "description": "Site statique PullMeIn + API et scripts CI",
+  "private": true,
+  "scripts": {
+    "start:api": "node api/server.js",
+    "validate:articles": "node scripts/validateArticles.js",
+    "build:articles": "node scripts/generateArticles.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2"
+  }
+}

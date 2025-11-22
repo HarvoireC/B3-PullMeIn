@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PullMeIn - Articles</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <h1 class="logo"><a href="articles.html">PullMeIn</a></h1>
+      </div>
+      <nav class="nav-menu">
+        <a href="articles.html" class="active">Articles</a>
+        <a href="submit.html">Proposer un article</a>
+        <a href="about.html">À propos</a>
+      </nav>
+      <div class="user-chip" id="navUser">Invité</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Derniers articles</h2>
+    <div id="articlesGrid" class="grid" aria-live="polite"></div>
+  </main>
+
+  <script src="scripts/app.js"></script>
+  <script src="scripts/articlesData.js"></script>
+  <script>
+    (function(){
+      updateNavbarUser();
+      const grid = document.getElementById('articlesGrid');
+      function cardTemplate(a){
+        const thumb = a.thumbnail || '';
+        const img = `<img src="${thumb}" alt="Vignette - ${a.title}" onerror="this.style.display='none'">`;
+        const href = a.detailPath ? a.detailPath : `article.html?id=${encodeURIComponent(a.id)}`;
+        return `
+          <article class="card">
+            ${img}
+            <div class="card-body">
+              <h3 class="card-title"><a href="${href}">${a.title}</a></h3>
+              <div class="meta">Par ${a.author} — ${a.date}</div>
+              <p class="excerpt">${a.excerpt || ''}</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn secondary" href="${href}">Lire</a>
+            </div>
+          </article>`;
+      }
+      if (!window.articles || !Array.isArray(articles) || articles.length===0){
+        grid.innerHTML = '<p class="muted">Aucun article pour le moment.</p>';
+        return;
+      }
+      grid.innerHTML = articles.map(cardTemplate).join('');
+    })();
+  </script>
+</body>
+</html>

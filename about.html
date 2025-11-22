@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PullMeIn - À propos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <h1 class="logo"><a href="articles.html">PullMeIn</a></h1>
+      </div>
+      <nav class="nav-menu">
+        <a href="articles.html">Articles</a>
+        <a href="submit.html">Proposer un article</a>
+        <a href="about.html" class="active">À propos</a>
+      </nav>
+      <div class="user-chip" id="navUser">Invité</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>À propos de PullMeIn</h2>
+    <p>PullMeIn est une plateforme communautaire dédiée au partage d'articles techniques. Elle met l'accent sur la contribution ouverte et l'automatisation via l'intégration continue.</p>
+    <p>Ce prototype est entièrement statique (HTML/CSS/JavaScript), sans backend. Il illustre les écrans principaux et la navigation, ainsi que la gestion d'un utilisateur en localStorage.</p>
+    <ul>
+      <li>Connexion ou mode invité</li>
+      <li>Liste des articles et page de détail</li>
+      <li>Formulaire de proposition (stockage local)</li>
+      <li>Style simple, moderne et responsive</li>
+    </ul>
+    <p class="muted">Projet démo — 2025.</p>
+  </main>
+
+  <script src="scripts/app.js"></script>
+  <script>
+    (function(){ updateNavbarUser(); })();
+  </script>
+</body>
+</html>

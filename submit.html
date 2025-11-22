@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PullMeIn - Proposer un article</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <h1 class="logo"><a href="articles.html">PullMeIn</a></h1>
+      </div>
+      <nav class="nav-menu">
+        <a href="articles.html">Articles</a>
+        <a href="submit.html" class="active">Proposer un article</a>
+        <a href="about.html">À propos</a>
+      </nav>
+      <div class="user-chip" id="navUser">Invité</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Proposer un article</h2>
+    <p class="muted">Soumettez votre article. Une Pull Request sera ouverte automatiquement sur GitHub.</p>
+    <form id="submit-form" class="stack" autocomplete="off">
+      <div class="form-row">
+        <label for="title">Titre de l’article</label>
+        <input id="title" name="title" type="text" placeholder="Titre" required>
+      </div>
+      <div class="form-row inline">
+        <div style="flex:1 1 220px">
+          <label for="author">Auteur</label>
+          <input id="author" name="author" type="text" placeholder="Votre nom" required>
+        </div>
+        <div style="flex:1 1 180px">
+          <label for="date">Date (JJ/MM/AAAA)</label>
+          <input id="date" name="date" type="text" placeholder="22/11/2025" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="thumbnail">URL de la miniature</label>
+        <input id="thumbnail" name="thumbnail" type="url" placeholder="https://..." required>
+      </div>
+      <div class="form-row">
+        <label for="excerpt">Extrait</label>
+        <textarea id="excerpt" name="excerpt" rows="3" placeholder="Résumé court"></textarea>
+      </div>
+      <div class="form-row">
+        <label for="content">Contenu (HTML autorisé)</label>
+        <textarea id="content" name="content" rows="8" placeholder="<p>Votre contenu...</p>" required></textarea>
+      </div>
+      <div class="form-row">
+        <label for="images">Images (une URL par ligne, facultatif)</label>
+        <textarea id="images" name="images" rows="3" placeholder="https://exemple.com/image1.png"></textarea>
+      </div>
+      <div class="form-row">
+        <label for="sources">Sources (une URL par ligne) — obligatoire</label>
+        <textarea id="sources" name="sources" rows="4" placeholder="https://exemple.com/ressource" required></textarea>
+      </div>
+      <div class="inline">
+        <button class="btn primary" type="submit">Envoyer</button>
+        <button class="btn ghost" type="reset">Réinitialiser</button>
+      </div>
+      <div id="formMessage" class="form-message"></div>
+    </form>
+  </main>
+
+  <script src="scripts/app.js"></script>
+  <script>
+  (function () {
+    if (typeof updateNavbarUser === 'function') {
+      updateNavbarUser();
+    }
+
+    const form = document.getElementById('submit-form');
+    const msgBox = document.getElementById('formMessage');
+
+    if (!form) return;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const title = form.elements['title'].value.trim();
+      const author = form.elements['author'].value.trim();
+      const date = form.elements['date'].value.trim();
+      const thumbnail = form.elements['thumbnail'].value.trim();
+      const imagesRaw = form.elements['images'].value.trim();
+      const sourcesRaw = form.elements['sources'].value.trim();
+      const content = form.elements['content'].value.trim();
+      const excerpt = form.elements['excerpt'] ? form.elements['excerpt'].value.trim() : '';
+
+      const images = imagesRaw
+        ? imagesRaw.split('\n').map(l => l.trim()).filter(Boolean)
+        : [];
+
+      const sources = sourcesRaw
+        ? sourcesRaw.split('\n').map(l => l.trim()).filter(Boolean)
+        : [];
+
+      const payload = { title, author, date, thumbnail, images, sources, content, excerpt };
+
+      msgBox.textContent = 'Envoi en cours...';
+      msgBox.className = 'form-message info';
+
+      try {
+        const res = await fetch('http://localhost:4000/api/articles', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        const data = await res.json();
+
+        if (!res.ok) {
+          msgBox.textContent = data.errors ? data.errors.join(' ') : 'Erreur lors de la soumission.';
+          msgBox.className = 'form-message error';
+        } else {
+          msgBox.textContent = data.message + (data.prUrl ? ` (PR : ${data.prUrl})` : '');
+          msgBox.className = 'form-message success';
+          form.reset();
+        }
+      } catch (err) {
+        console.error(err);
+        msgBox.textContent = "Erreur réseau lors de l'envoi du formulaire.";
+        msgBox.className = 'form-message error';
+      }
+    });
+  })();
+  </script>
+</body>
+</html>
