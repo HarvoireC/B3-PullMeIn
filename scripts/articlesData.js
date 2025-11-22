@@ -20,6 +20,15 @@ const articles = [
   },
   {
     "id": 3,
+    "title": "Mon Article",
+    "author": "Corentin",
+    "date": "22/11/2025",
+    "thumbnail": "https://i.ytimg.com/vi/RG6DsvgW84o/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLA2ZuvAqb2baZEZv7KD1cWrxSpe6w",
+    "excerpt": "Mon article pour tester",
+    "detailPath": "article_detail_page/2025-11-22-mon-article-corentin.html"
+  },
+  {
+    "id": 4,
     "title": "Test",
     "author": "corentin",
     "date": "10/10/2025",
@@ -28,7 +37,7 @@ const articles = [
     "detailPath": "article_detail_page/2025-11-22-test-corentin.html"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "test",
     "author": "test",
     "date": "20/10/2025",
@@ -37,7 +46,7 @@ const articles = [
     "detailPath": "article_detail_page/2025-11-22-test-test.html"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "testtest",
     "author": "astori",
     "date": "22/11/2025",
