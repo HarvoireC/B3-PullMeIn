@@ -1,0 +1,45 @@
+name: Build & Commit HTML Articles
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-commit:
+    # évite la boucle infinie quand c'est déjà le bot qui push
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # important pour pouvoir push
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate HTML from JSON
+        run: npm run build:articles
+
+      - name: Commit generated files
+        run: |
+          # Vérifier s'il y a des changements
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+
+            # Ajoute uniquement ce qui est généré
+            git add article_detail_page scripts/articlesData.js
+
+            git commit -m "build: generate articles HTML [skip ci]"
+            git push
+          else
+            echo "Aucun changement à committer"
+          fi
