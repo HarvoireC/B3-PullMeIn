@@ -1,7 +1,7 @@
 # PullMeIn
 B3 Intégration continue - Projet 1
 
-## 🎯 Présentation du projet
+## Présentation du projet
 
 **PullMeIn** est un site communautaire qui centralise et partage des articles techniques rédigés par des professionnels et des passionnés.
 
