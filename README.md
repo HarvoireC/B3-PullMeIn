@@ -451,3 +451,8 @@ Pour qu’un article soit accepté :
 
 PullMeIn sert à la fois de **plateforme de partage** d’articles techniques et de démonstration concrète d’un workflow d’intégration continue complet :  
 **formulaire → API Render → PR GitHub → CI → génération HTML → déploiement GitHub Pages**.
+
+## Crédits 
+Corentin Harvoire
+Louis Astori
+Killian Guillemot
